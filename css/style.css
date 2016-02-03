@@ -1,0 +1,219 @@
+.heading{
+	font-size: 96px;
+}
+.headImg{
+	width : 150px !important;
+	height: 150px !important;
+}
+.top-container{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.navImg{
+	margin-top: 10px;
+	width: 50px !important;
+	height: 50px !important;
+}
+nav h3{
+	margin: 10px;
+}
+.text{
+	font-size: 40px;
+	margin: 10px;
+}
+.navText{
+	font-size: 15px;
+	margin: 0px;
+	padding: 0px;
+}
+nav i{
+	margin-top : -10px;
+}
+nav li a:hover{
+	background: white;
+	color:black;
+	opacity: 1;
+}
+.active{
+	opacity: 1;
+	margin-bottom: -5px;
+	background: black !important;
+}
+.rostraImg{
+	width: 300px;
+	margin: 10px;
+}
+.rostraImgContainer{
+	
+	margin-top: 50px;
+}
+.navbar-fixed .section{
+	padding-top: 0px !important;
+}
+#about,
+#events,
+#register,
+#contact{
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	width : 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.slider.fullscreen{
+	position: static;
+      width : auto;
+      height: 100vh;
+      background: transparent;
+}
+.slider .slides{
+	background-color: transparent !important;
+}
+.customNav{
+	height: 65px;
+}
+.card{
+	padding: 0px !important;
+	width : 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.input-field label {
+	background-color: transparent !important;
+}
+.rules{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+.info{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width : 300px;
+}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+.divider{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.contactus-wrapper{
+	margin-left: auto;
+	margin-right: auto;
+}
+.map{
+	width : 600px;
+	height: 400px;
+}
+
+@media only screen and (max-width : 760px) {
+	.map{
+		width : 80vw;
+		height: 80vh;
+	}
+}
+.footText{
+	display : inline;
+	color:white;
+	font-size: 16px;
+}
+.page-footer ul li{
+	display: inline-block;
+}
+.page-footer{
+	padding-top: 20px;
+	margin-top : 30px;
+}
+.nav-foot{
+	width : 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+}
+.foot{
+	width : 150px;
+	padding-left: 0px;
+	padding-right: 0px; 
+	margin-top: 10px;
+}
+.material-icons{
+	margin-top: 3px;
+}
+.side-nav{
+	margin-top : 60px;
+	z-index : 0;
+	padding-bottom: 60px;
+}
+.side-nav.fixed a{
+color:white;
+}
+.side-nav.fixed a:hover{
+color:black;
+
+}
+.updates{
+	min-height: 100vh;
+	height: 100%;
+	background-color:#efefef; 
+}
+.eventHead{
+	font-size: 72px;
+}
+.text{
+	margin: 0px;
+	padding: 0px;
+	font-size:16px;
+}
+.desc{
+	font-size: 20px;
+}
+.eventImg{
+	width:100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+}
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-button {
+	width: 8px;
+	height:5px;
+}
+::-webkit-scrollbar-track {
+	background:#eee;
+	border: thin solid lightgray;
+	box-shadow: 0px 0px 3px #dfdfdf inset;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb {
+	background:#999;
+	border: thin solid gray;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background:#7d7d7d;
+}			
+.register{
+	margin-top: 50px;
+}
+.litsocImg,
+.rostraImg{
+	width : 100%;
+	height: 100%;	
+	margin-top: 25px;
+}
+.message{
+	color : white;
+	background-color: #4db6ac;
+	padding : 10px;
+	
+	font-size: 20px;
+}
