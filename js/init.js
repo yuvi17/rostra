@@ -24,7 +24,7 @@ new WOW().init();
   				  var $form = $('#registration-form');
   				$form.on('submit', function() { 
   					 $('.submit').on('click',function() {
-    					$(this).prop("disabled",true);
+    					$(this).prop({disabled:true});
 					});           
   					$.post($form.attr('action'), $form.serialize())
   					.done(function(data) {
