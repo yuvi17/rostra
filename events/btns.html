@@ -78,16 +78,23 @@
 						your talent.
 						<br>
 						<br>
+						<b>Extract :</b>
+						<i>"May be I'll keep the furniture neutral and have photos I have taken all over the walls for pops of color?</i><br>
+Then I reminded myself to not get too carried away and attached.This was temporary. "
+							<br>
+							<b>OR</b>
+							<br>
+						"I began to look at my watch every minute and found that he was right.The more I looked at it, the slower the seconds passed.I decided to take his advice and I put the watch back in my knapsack."
+						<br>
 						<b>Roshni Kedia : +918002250017</b>
 				<br>
 				</p>
 				
 				<a class=" info waves-effect waves-light btn modal-trigger" href="#rules"> 
-	    		<p class="text"><i class="material-icons">assignment</i> RULES</p></a><br>
-	    		<p class="flow-text">Submission portal opens on 7th February</p>
-	    		<!--<a class=" info waves-effect waves-light btn modal-trigger" href="#submit"> 
+	    		<p class="text"><i class="material-icons">assignment</i> RULES</p></a>
+	    		<a class=" info waves-effect waves-light btn modal-trigger" href="#submit"> 
 	    		<p class="text"><i class="material-icons">send</i> SUBMIT</p></a>
-				-->
+				
 			</div>
 			<div class="updates  col s12 m3">
 				<p class="flow-text center">UPDATES</p>
@@ -157,15 +164,16 @@ Eastern India's largest Literary Carnival
 						<li>The submission should be in the form of a short story. 
 						</li>
 						<div class="divider"></div>
-						<li> The story should involve a maximum of three characters.
+						<li> The story should involve a minimum of three characters.
+						</li>
+						<div class="divider"></div>
+						<li>
+						The participants are being provided with an extract. It's mandatory to include the extract in it's exact form in the story.
 						</li>
 						<div class="divider"></div>
 						<li>
 						 The submission should not exceed 1500 words.						</li>
 						<div class="divider"></div>
-						<li>
-						 The submission should not exceed 1500 words.
-						</li>
 						<li>
 						Plagiarism in any form shall lead to immediate disqualification of the submitted work.
 						</li>
@@ -181,7 +189,7 @@ Eastern India's largest Literary Carnival
 	    	</div>
 	    </div>
 	    <div id="submit" class="modal modal-fixed-footer">
-			<div class="modal-content row">
+			<form class="modal-content row" action ="http://api.cloudstitch.io/yuvraj17/magic-form/datasources/sheet/btns" id="registration-form" method="POST">
        		    <h5 class="center">Submit Your Story</h5>
 				<div class="divider"></div>
 						<div class="col input-field s12 m6">
@@ -198,14 +206,14 @@ Eastern India's largest Literary Carnival
     					</div>	
     					<div class="row">
 	        				<div class="input-field col s12">
-	         				 <textarea id="textarea1" class="materialize-textarea"></textarea>
+	         				 <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
 	          				 <label for="textarea1">Your Story</label>
 	       				 	</div>				
 	      				</div>
-	      				
-			</div>
+	      		<button href="#!" class="left btn waves-effect waves-light modal-action z-depth-1" type="submit">Submit</button>		
+			</form>
 			<div class="modal-footer">
-			<a href="#!" class="left btn waves-effect waves-light modal-action z-depth-1">Submit</a>
+			
 				<a href="#!" class="btn waves-effect waves-light modal-action modal-close z-depth-1">Close</a>
 
 	    	</div>
@@ -249,7 +257,27 @@ Eastern India's largest Literary Carnival
 	      		$('.carousel').carousel();
 	      	})
       
-        
+        	var $form = $('#registration-form');
+  				$form.on('submit', function() { 
+  					 $('.submit').on('click',function() {
+    					$(this).prop({disabled:true});
+					});           
+  					$.post($form.attr('action'), $form.serialize())
+  					.done(function(data) {
+  						$('.submit').on('click',function() {
+    					$(this).prop("disabled",false);
+					});
+   					$(".message").html("<br><br>You've successfully submitted !<br><br>");
+  				})
+  			.fail(function(jqXHR, textStatus, errorThrown) {
+  				$('.submit').on('click',function() {
+    					$(this).prop("disabled",false);
+					});
+    			$(".message").html("<br><br> Something went wrong, please try again.<br><br>");
+  			});
+  			return false;
+			}); 
+
       	</script>
    </body>
 </html>
