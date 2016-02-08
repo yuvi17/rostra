@@ -73,42 +73,45 @@
 				<p class="desc flow-text">
 					The Youth Parliament is a simulation of the Lok Sabha session of the Indian Parliament. Conducted in the exact same fashion, it provides participants a chance to become parliamentarians and experience the troubles and excitement of law makers with all the thrill and tension their job brings. The House consists of the Speaker, the Secretary General, the Marshall, the Government, and the Opposition. Participants may apply to become MPs from either the Government or the Opposition by filling the attached form on the Youth Parliament tab. The final allocation will, however, be determined by the organisers, essentially based on the responses filled in the form by the various participants. (Those who are not allocated any Ministry or Committee will sit in the house as ordinary MPs, but will be fully involved in all aspects of decision making.)
 				<br>
-				<b>The Rules, Guide, List of Ministeries, List of Business along with Topic and List of Questions shall be updated soon.</b>
-				<br>
-				<b>Registrations begin on 7th of February, 2016</b>
-				</p>
 				
 			</div>
 			<div class="  col s12 m3">
 			<p class="flow-text center">RESOURCES</p>
 				<div class="row">
 						<div class="col s12 faq">
-	    					<a class=" info waves-effect waves-light btn" href="rules.pdf" target="_blank">
+	    					<a class=" ypbutton waves-effect waves-light btn" href="rules.pdf" target="_blank">
 	    					<i class="material-icons">assignment</i>
 	    					 RULES
 	    					 <input  id="brochure" ></a>
 	    				</div>
-
+	    				<br>	
 	    				<div class="col s12 faq">
 	    					
-	    					<a class=" info waves-effect waves-light btn" href="handbook.pdf" target="_blank">
+	    					<a class=" ypbutton waves-effect waves-light btn" href="handbook.pdf" target="_blank">
 	    					<i class="material-icons">file_download</i>
 	    					 GUIDE
 	    					 <input  id="brochure" ></a>
 	    				</div>
+	    				<br>
 	    				<div class="col s12 faq">
-	    					<a class=" info waves-effect waves-light btn" href="list_ministries.pdf" target="_blank">
+	    					<a class=" ypbutton waves-effect waves-light btn" href="list_ministries.pdf" target="_blank">
 	    					<i class="material-icons">account_balance</i>
 	    					 LIST OF MINISTRIES
 	    					 <input  id="brochure" ></a>
 	    				</div>
+	    				<br>
 	    				<div class="col s12 faq">	    					
-	    				<a class=" info waves-effect waves-light btn" href="business.pdf" target="_blank">
+	    				<a class=" ypbutton waves-effect waves-light btn" href="business.pdf" target="_blank">
 	    					<i class="material-icons">turned_in</i>
 	    					 LIST OF BUSINESS
 	    					 <input  id="brochure" ></a>
 	    				</div>
-	    					    			</div>
+	    				<br>
+	    				<div class="col s12 faq">
+	    					<a class=" ypbutton waves-effect waves-light btn modal-trigger" href="#register"> 
+	    					<p class="text"><i class="material-icons">event_note</i> REGISTER</p></a>
+	    				</div>
+	    		</div>
 
 			</div>
 		</div>
@@ -155,38 +158,70 @@ Eastern India's largest Literary Carnival
 		<div class="modal-footer">
 				<a href="#!" class="btn waves-effect waves-light modal-action modal-close z-depth-1">Close</a>
 	    	</div>
-	    </div>
-		<div id="rules" class="modal modal-fixed-footer">
-			<div class="modal-content">
-       		    <h2 class="center">Rules</h2>
-				<p class="flow-text">
-			       	<ul>
-				        <li>TEAM SIZE: 2	
-
-					    </li>
-						
-						<div class="divider"></div>
-						<li> One of the participants will be reporting directly from the newsroom while the other one will be given the job of on-spot reporting.
-						</li>
-						<div class="divider"></div>
-						<li> Newsroom reporting will require one participant to read out news from a monitor. The news will contain technical as well as non-technical glitches, which the anchor has to promptly rectify. The newsroom anchor will then hand it over to the on-spot reporter who will be provided with hypothetical situations to report on.
-						</li>
-						<div class="divider"></div>
-						<li>
-						 The audience and the judges will be viewing the event on a television. 						</li>
-						<div class="divider"></div>
-						<li>
-						 The audience and the judges will be viewing the event on a television. 
-						</li>
-						<li>
-							The decision of the Judges and the organizing committee will be final and binding.
-						</li>
-					</ul>
-				</p>
-			</div>
+	</div>
+	    <div id="register" class="modal modal-fixed-footer">
+			<form class="modal-content row" action ="http://api.cloudstitch.io/yuvraj17/magic-form/datasources/sheet/yp" id="registration-form" method="POST">
+       		    <h5 class="center">Register for Youth Parliament</h5>
+				<div class="divider"></div>
+						<div class="col input-field s12">
+    						<input type="text" class="validate" id="name" name="name" required/>
+    						<label for="name">Your Name</label>
+    					</div>
+    					<br>
+    					<div class="col s12 m6 input-field">
+    						<input type="text" class="validate" id="teamName" name="teamName" required/>
+    						<label for="teamName">Team Name(Leave blank for individual)</label>
+    					</div>
+    					<div class="col s12 m6 input-field">
+    						<input type="text" class="validate" id="college" name="college" required/>
+    						<label for="college">College</label>
+    					</div>
+    					<br>
+    					 <div class="col s12 m6 input-field">
+    						<input type="text" class="validate" id="number" name="number" required/>
+    						<label for="number">Number</label>
+    					</div>
+    					<br>
+    					<div class="col s12 m6 input-field">
+    						<input type="email" class="validate" id="email" name="email" required/>
+    						<label for="email">Email</label>
+    					</div>
+    					<div class="row">
+	        				<div class="input-field col s12">
+	         				 <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
+	          				 <label for="textarea1">Why do you wish to participate in Youth Parliament</label>
+	       				 	</div>				
+	      				</div>
+	      				<p class="flow-text">Choice of Ministry</p>
+    					 <div class="col s12 m6 input-field">
+    						<input type="text" class="validate" id="choice1" name="choice1" required/>
+    						<label for="choice1">Choice 1</label>
+    					</div>
+    					<div class="col s12 m6 input-field">
+    						<input type="text" class="validate" id="choice2" name="choice2" required/>
+    						<label for="choice2">Choice 2</label>
+    					</div>
+    					<br>
+    					<div class="row">
+	        				<div class="input-field col s12">
+	         				 <textarea id="textarea2" name="textarea2" class="materialize-textarea"></textarea>
+	          				 <label for="textarea1">Reasons for Choice 1</label>
+	       				 	</div>				
+	      				</div>
+	      				<br>
+	      				<div class="row">
+	        				<div class="input-field col s12">
+	         				 <textarea id="textarea3" name="textarea3" class="materialize-textarea"></textarea>
+	          				 <label for="textarea1">Reasons for Choice 2</label>
+	       				 	</div>				
+	      				</div>
+	      				<button href="#!" class="left btn waves-effect waves-light modal-action z-depth-1" type="submit">Submit</button>
+			</form>
 			<div class="modal-footer">
 				<a href="#!" class="btn waves-effect waves-light modal-action modal-close z-depth-1">Close</a>
+
 	    	</div>
+	    	
 	    </div>
 		<!--<footer class="teal darken-2 page-footer" id="#foot">
     		<div class="center container row">
@@ -226,7 +261,26 @@ Eastern India's largest Literary Carnival
 	      		$('.carousel').carousel();
 	      	})
       
-        
+        	var $form = $('#registration-form');
+  				$form.on('submit', function() { 
+  					 $('.submit').on('click',function() {
+    					$(this).prop({disabled:true});
+					});           
+  					$.post($form.attr('action'), $form.serialize())
+  					.done(function(data) {
+  						$('.submit').on('click',function() {
+    					$(this).prop("disabled",false);
+					});
+   					$(".message").html("<br><br>You've successfully submitted !<br><br>");
+  				})
+  			.fail(function(jqXHR, textStatus, errorThrown) {
+  				$('.submit').on('click',function() {
+    					$(this).prop("disabled",false);
+					});
+    			$(".message").html("<br><br> Something went wrong, please try again.<br><br>");
+  			});
+  			return false;
+			}); 
       	</script>
    </body>
 </html>
