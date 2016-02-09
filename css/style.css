@@ -136,10 +136,12 @@ nav li a:hover{
 	padding-right: auto;
 }
 .foot{
-	width : 150px;
+	width : 100%;
 	padding-left: 0px;
 	padding-right: 0px; 
 	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
 }
 .material-icons{
 	margin-top: 3px;
