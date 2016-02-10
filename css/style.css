@@ -1,6 +1,9 @@
 .heading{
 	font-size: 96px;
 }
+.tagline{
+	font-size: 60px;
+}
 .headImg{
 	width : 150px !important;
 	height: 150px !important;
@@ -213,8 +216,9 @@ color:black;
 .message{
 	color : white;
 	background-color: #4db6ac;
-	
+	width : 50%;
 	font-size: 20px;
+	
 }
 .caption{
 	font-family: 'Libre Baskerville', serif;
