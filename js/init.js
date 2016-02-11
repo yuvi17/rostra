@@ -45,7 +45,7 @@ new WOW().init();
   				$form1.on('submit', function() { 
     					$(this).prop({disabled:true});
 				          
-  					$.post($form1.attr('action'), $form.serialize())
+  					$.post($form1.attr('action'), $form1.serialize())
   					.done(function(data) {
     					$(this).prop("disabled",false);
 					   	$(".message-yp").html("<br><br>You've successfully registered for Youth Parliament!<br><br>");
