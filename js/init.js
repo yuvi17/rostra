@@ -41,3 +41,19 @@ new WOW().init();
   			});
   			return false;
 			}); 
+  			var $form1 = $('#registration-form-yp');
+  				$form1.on('submit', function() { 
+    					$(this).prop({disabled:true});
+				          
+  					$.post($form1.attr('action'), $form.serialize())
+  					.done(function(data) {
+    					$(this).prop("disabled",false);
+					   	$(".message-yp").html("<br><br>You've successfully registered for Youth Parliament!<br><br>");
+  				})
+  			.fail(function(jqXHR, textStatus, errorThrown) {
+    					$(this).prop("disabled",false);
+					
+    			$(".message").html("<br><br> Something went wrong, please try again.<br><br>");
+  			});
+  			return false;
+			}); 
