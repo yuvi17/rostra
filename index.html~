@@ -1,4 +1,4 @@
-<! DOCTYPE HTML >
+﻿<! DOCTYPE HTML >
 
 <!-- Coded by Yuvraj Jaiswal of Literary Society, BIT Mesra for ROSTRA' 16 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -16,7 +16,8 @@
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       	    rel="stylesheet">
       	    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
-        <title>Rostra'16</title>
+        <title>Rostra'17</title>
+        
     </head>
     <body>
     	<header>
